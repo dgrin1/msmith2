@@ -30,8 +30,8 @@ plt.rc('text',usetex=True)
 plt.rc('font', **{'family':'serif','serif':['Times New Roman']})
 #plot, title, show
 plt.plot(x,Ms)
-plt.xlabel("Coordinate Distance")
-plt.ylabel("Total Number of Grid Cells")
+plt.xlabel("Grid Cells")
+plt.ylabel("TMadelung Constant")
 plt.title("The Madelung Constant")
 plt.show()
 #%% The second function
