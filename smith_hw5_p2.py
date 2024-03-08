@@ -109,9 +109,9 @@ def delx(n):
         exs=(x**2)*(np.abs(ps(n,x))**2)
         return exs
 #Newman's Gaussian quadrature function
-    x,w=gaussxwab(50,-122,122)
+    x,w=gaussxwab(100,-10,10)
     s=0.0
-    N=50
+    N=100
 #for loop to use Newman's code
     for k in range(N):
         s+=w[k]*exint(n,x[k])
