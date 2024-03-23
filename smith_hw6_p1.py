@@ -28,8 +28,10 @@ def H(m,n):
 #if they are both even or both odd
         if rm==rn:
             h=0
+#if one is even and one is odd
         elif rm!=rn:
             h=-((2*a)/(L**2))*(((2*L)/(np.pi))**2)*((m*n)/((m**2)-(n**2))**2)
+#integral values when m=n
     elif m==n:
         h=(((hbar**2)*(n**2)*(np.pi**2))/(2*M*(L**2)))+(a/2)
     return h
