@@ -5,9 +5,9 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 #importing latex fonts
-#plt.rc('text',usetex=True)
+plt.rc('text',usetex=True)
 #plt.rc('font', **{'family':'sans-serif','sans-serif':['Helvetica']})
-#plt.rc('font', **{'family':'serif','serif':['Times New Roman']})
+plt.rc('font', **{'family':'serif','serif':['Times New Roman']})
 
 #%% part (a)
 
