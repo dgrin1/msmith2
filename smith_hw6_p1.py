@@ -106,6 +106,7 @@ for i in range(100):
 plt.plot(x,p0,label="Ground state")
 plt.plot(x,p1,label="1st excited state")
 plt.plot(x,p2,label="2nd excited state")
+plt.title("Probability density for different energy Eigenstates")
 plt.xlabel("x")
 plt.ylabel("$|\psi(x)|^{2}$")
 plt.legend(loc=1)
