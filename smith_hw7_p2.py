@@ -45,7 +45,7 @@ r=np.array([0.0,1.0,0.0],float)
 for t in tpoints:
     xpoints.append(r[0])
     ypoints.append(r[1])
-    zpoints.append(r[1])
+    zpoints.append(r[2])
     k1 = h*f(r,t)
     k2 = h*f(r+0.5*k1,t+0.5*h)
     k3 = h*f(r+0.5*k2,t+0.5*h)
