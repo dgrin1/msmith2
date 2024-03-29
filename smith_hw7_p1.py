@@ -154,6 +154,14 @@ for oomega in oomegavals:
         r += (k1+2*k2+2*k3+k4)/6
     maxes.append(max(thetapoints))
 
+#the maximum amplitude
+bigmax=max(maxes)
+#location of the maximum amplitude in the big omega list
+index=maxes.index(bigmax) 
+#finding the resonant frequency
+resfreq=oomegavals[index]
+print("The resonant frequency is ",resfreq)
+
 #make graph
 plt.plot(oomegavals,maxes, label=r"$\theta$")
 plt.xlabel("Frequency (Hz)")
