@@ -230,7 +230,7 @@ T=p*365.25*24*3600 #s
 
 #set endpoints and N, inital step size
 a=0.0
-b=T*2.0
+b=T
 N=100000
 h0=(b-a)/N
 h=h0
