@@ -156,8 +156,8 @@ def solve(E):
 
 
 #values provided from book
-E1=0.0
-E2=e
+E1=Eguessh(1)
+E2=Eguessh(2)
 psi2=solve(E1)
 
 #define energy function to generate guesses for the secant method
@@ -168,7 +168,7 @@ def Eguessh(n):
     return en
 
 #set target accuracy
-target=e/1000
+target=E2/1000
 
 #find ground state energy
 while abs(E1-E2)>target:
@@ -178,7 +178,7 @@ Eground=E2/e
 print("The ground state energy is E1=",Eground,"eV")
 
 #find first excited state energy
-E3=Eguessh(1)
+E3=Eguessh(3)
 psi3=solve(E2)
 
 #reset target accuracy
@@ -191,7 +191,7 @@ Efes=E3/e
 print("The first excited state energy is E2=",Efes,"eV")
 
 #find second excited state energy
-E4=Eguessh(2)
+E4=Eguessh(4)
 psi4=solve(E3)
 
 #reset target accuracy
